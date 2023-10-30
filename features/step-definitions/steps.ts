@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import { expect, $ } from '@wdio/globals'
+import { expect} from '@wdio/globals'
 
 import LoginPage from '../pageobjects/login.page';
 import SecurePage from '../pageobjects/secure.page';
@@ -9,7 +9,7 @@ const pages = {
 }
 
 Given(/^I am on the (\w+) page$/, async (page) => {
-    await pages[page].open()
+    await pages.login.open(page);
 });
 
 When(/^I login with (\w+) and (.+)$/, async (username, password) => {

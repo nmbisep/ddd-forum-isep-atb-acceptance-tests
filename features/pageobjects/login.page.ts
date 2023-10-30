@@ -32,9 +32,11 @@ class LoginPage extends Page {
 
     /**
      * overwrite specific options to adapt it to page object
+     * This shows how to override a default path.
      */
-    public open () {
-        return super.open('login');
+    public open (path:string) {
+
+        return super.open(path); //or return super.open('login');
     }
 }
 

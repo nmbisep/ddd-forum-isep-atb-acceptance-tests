@@ -16,7 +16,6 @@
         ],
         "skipLibCheck": true,
         "noEmit": true,
-        "allowImportingTsExtensions": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
         "strict": true,
