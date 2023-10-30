@@ -1,4 +1,4 @@
-import { $ } from '@wdio/globals'
+import {$} from '@wdio/globals'
 import Page from './page';
 
 /**
@@ -8,7 +8,7 @@ class SecurePage extends Page {
     /**
      * define selectors using getter methods
      */
-    public get flashAlert () {
+    public get flashAlert() {
         return $('#flash');
     }
 }
